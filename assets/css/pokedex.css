@@ -1,0 +1,243 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pokemon {
+    margin: .5rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    height: 175px;
+    overflow: hidden;
+    z-index: 1;
+}
+.pokeimg img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+}
+.pokeimg {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    float: right;
+    top: -2.2rem;
+    padding: 1rem;
+    margin-left: 10px;
+    
+}
+
+
+
+
+
+/*.imgbackground {
+
+    width: 150px;
+    position: relative;
+    z-index: 0 !important;
+    opacity: 0.5;
+    filter: invert(1);
+    transform: rotate(45deg) !important;
+    top: -4rem !important;
+    left: -3rem !important;
+
+}
+
+*/
+
+
+
+
+.imgbackground {
+    width: 290px;
+    height: 290px; /* Ajusta según sea necesario */
+    position: relative;
+    z-index: 0 !important;
+    opacity: 0.5;
+    filter: invert(1);
+    transform: rotate(45deg) !important;
+    top: -12rem !important;
+    left: -4rem !important;
+    background: url('https://pokemoncalc.web.app/en/assets/pokeball.svg') no-repeat center center;
+    background-size: cover; /* Ajusta según sea necesario */
+}
+
+
+.pokeinfo {
+    position: relative;
+    z-index: 999;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    height: 100px; 
+    text-transform: capitalize; 
+}
+.number {
+    position: absolute;
+    left: 18.6rem;
+    top: 7.9999999999999998rem;
+    color: black;
+    opacity: .3;
+    text-shadow: 0 0 0 #000, 0 0 0 #000, 0 0 0 #000, 0 0 0 #000; 
+
+}
+
+
+.fighting {
+    background-color: #ce3f6a;
+    }
+    .psychic {
+    background-color: #f97077;
+    }
+    .poison {
+    background-color: #ab6ac8;
+    }
+    .dragon {
+    background-color: #096dc3;
+    }
+    .ghost {
+    background-color: #5269ab;
+    }
+    .dark {
+    background-color: #595365;
+    }
+    .ground {
+    background-color: #d97746;
+    }
+    .fire {
+    background-color: #fe9c53;
+    }
+    .fairy {
+    background-color: #ec8fe7;
+    }
+    .water {
+    background-color: #4d90d5;
+    }
+    .flying {
+    background-color: #8fa8de;
+    }
+    .normal {
+    background-color: #9098a2;
+    }
+    .rock {
+    background-color: #c6b889;
+    }
+    .electric {
+    background-color: #f4d23b;
+    }
+    .bug {
+    background-color: #90c02c;
+    }
+    .grass {
+    background-color: #63bb5c;
+    }
+    .ice {
+    background-color: #73cebf;
+    }
+    .steel {
+    background-color: #5a8fa1;
+    }
+
+
+
+
+
+
+
+.fighting_dark {
+    background-color: #FD044F;
+    }
+    .psychic_dark {
+    background-color: #FD343E;
+    }
+    .poison_dark {
+    background-color: #8D05CA;
+    }
+    .dragon_dark {
+    background-color: #044D8B;
+    }
+    .ghost_dark {
+    background-color: #284290;
+    }
+    .dark_dark {
+    background-color: #413D4A;
+    }
+    .ground_dark {
+    background-color: #C7551C;
+    }
+    .fire_dark {
+    background-color: #FE6C00;
+    }
+    .fairy_dark {
+    background-color: #ED22E2;
+    }
+    .water_dark {
+    background-color: #1163B7;
+    }
+    .flying_dark {
+    background-color: #0A4DDE;
+    }
+    .normal_dark {
+    background-color: #666A70;
+    }
+    .rock_dark {
+    background-color: #BBA14A;
+    }
+    .electric_dark {
+    background-color: #E9C00B;
+    }
+    .bug_dark {
+    background-color: #75A510;
+    }
+    .grass_dark {
+    background-color: #388B31;
+    }
+    .ice_dark {
+    background-color: #3BB39F;
+    }
+    .steel_dark {
+    background-color: #256479;
+    }
+	
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+.pagination button {
+    padding: .25rem .5rem;
+    color: white;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 345px){
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 576px){
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 785px){
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px){
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
